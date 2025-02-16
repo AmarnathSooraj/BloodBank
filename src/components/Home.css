@@ -1,0 +1,216 @@
+.container{
+    padding:0% 8%;
+    overflow: hidden;
+}
+.section1{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    padding:5% 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.des{
+    color:#fefefe;
+    font-size:2.8rem;
+    max-width: 350px;
+}
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin:15% 0 7% 0;
+}
+.section2 button{
+    padding:3% 5%;
+    margin:8px;
+    font-size: 1.2rem;
+    border:none;
+    border-radius:12px;
+    color:#fefefe;
+    background-color:rgb(231, 67, 67);
+    cursor:pointer;
+}
+.section3, .section4{
+    padding:0 8%;
+    .heading{
+        display:flex;
+        justify-content: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color:rgb(231, 67, 67);
+    }
+    .content{
+        padding:3% 0;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list{
+        max-width: 500px;
+        line-height:40px;
+        letter-spacing: 1px;
+    }
+}
+.section3 .content li{
+    font-weight: 500;
+}
+.section3 .content span{
+    font-weight: 300;
+}
+.section5{
+    margin:3% 15%;
+    background:url('../assets/Rectangle.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:5% 12%;
+    text-align: center;
+    border-radius: 20px;
+    p{
+        font-size: 1.6rem;
+        color:#fefefe;
+    }
+    button{
+        border:none;
+        cursor:pointer;
+        margin:10px 0;
+        padding:2% 10%;
+        border-radius: 20px;
+        background-color: #fefefe;
+        color:rgb(231, 67, 67);
+    }
+}
+.section6{
+    padding:0 8%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    .heading{
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color:rgb(231, 67, 67);
+    }
+    ul{
+        margin:50px 0;
+        align-items: center;
+    }
+    ul li{
+        list-style: decimal;
+        line-height: 40px;
+    }
+    ul li span{
+        font-weight: 500;
+        color:rgb(231, 67, 67);
+    }
+}
+.section7{
+    margin:4% 20%;
+    background:url('../assets/Rectangle2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:5% 8%;
+    border-radius: 20px;
+    p{
+        margin:15px 0;
+    }
+    p span{
+        color:rgb(231, 67, 67);
+    }
+}
+
+.section2 button:hover {
+    background-color: rgb(210, 55, 55);
+}
+
+.section5 button:hover {
+    background-color: rgb(231, 67, 67);
+    color: #fff;
+}
+
+
+
+
+/* Mobile View */
+@media only screen and (max-width: 768px) {
+
+    .section1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 10% 5%;
+        img{
+            width:400px;
+            height:320px;
+        }
+    }
+
+    .des {
+        font-size: 2rem;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 10% 0 5% 0;
+    }
+
+    .section2 button {
+        width: 80%;
+        padding: 4% 0;
+        font-size: 1rem;
+    }
+
+    .section3, .section4 {
+        img{
+            width:400px;
+            height:350px;
+        }
+        padding: 0 5%;
+    }
+
+    .section3 .content, .section4 .content {
+        flex-direction: column;
+    }
+
+    .list {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .section5 {
+        margin: 5% 5%;
+        padding: 8% 5%;
+    }
+
+    .section5 button {
+        width: 80%;
+    }
+
+    .section6 {
+        padding: 0 5%;
+    }
+
+    .section6 .heading {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .section6 ul {
+        margin: 30px 0;
+    }
+
+    .section6 ul li {
+        text-align: center;
+    }
+
+    .section7 {
+        margin: 5% 5%;
+        padding: 8% 5%;
+    }
+}
