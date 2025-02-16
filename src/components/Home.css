@@ -162,6 +162,8 @@
 
     .section2 button {
         width: 80%;
+        background-color:#fefefe;
+        color:rgb(231, 67, 67);
         padding: 4% 0;
         font-size: 1rem;
     }
@@ -172,6 +174,9 @@
             height:350px;
         }
         padding: 0 5%;
+    }
+    .section .heading{
+        color:#fefefe;
     }
 
     .section3 .content, .section4 .content {
