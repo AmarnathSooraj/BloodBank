@@ -36,7 +36,7 @@ function Home() {
             </div>
         </div>
         <div className="section4">
-            <div className='heading'>Why can Donate?</div>
+            <div className='heading'>Who can Donate?</div>
             <div className='content'>
                     <ul className='list'>
                         <li>Individuals aged 18-65 years</li>
