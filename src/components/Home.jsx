@@ -3,7 +3,7 @@ import './Home.css'
 import pic1 from '../assets/pic1.png'
 import pic2 from '../assets/pic2.png'
 import pic3 from '../assets/pic3.png'
-
+import bldDrop from '../assets/Blooddrop.png'
 
 function Home() {
   return (
@@ -23,13 +23,13 @@ function Home() {
             <div className='content'>
                     <img src={pic3}/>
                     <ul className='list'>
-                        <li>Save lives<br/>
+                        <li><span><img src={bldDrop}/></span>Save lives<br/>
                             <span>Just one donation can help up to three people.</span>
                         </li>
-                        <li>Improves your health<br/>
+                        <li><span><img src={bldDrop}/></span>Improves your health<br/>
                             <span>Regular donation promotes good health by balancing iron levels.</span>
                         </li>
-                        <li>Community support<br/>
+                        <li><span><img src={bldDrop}/></span>Community support<br/>
                             <span>Play a vital role in emergency preparedness.</span>
                         </li>
                     </ul>
@@ -39,10 +39,10 @@ function Home() {
             <div className='heading'>Who can Donate?</div>
             <div className='content'>
                     <ul className='list'>
-                        <li>Individuals aged 18-65 years</li>
-                        <li>Minimum weight of 50kg</li>
-                        <li>Healthy individuals with no chronic diseases or infections</li>
-                        <li>No recent history of major surgeries,tattoos,or piercings (within 6 months)</li>
+                        <li><span><img src={bldDrop}/></span>Individuals aged 18-65 years</li>
+                        <li><span><img src={bldDrop}/></span>Minimum weight of 50kg</li>
+                        <li><span><img src={bldDrop}/></span>Healthy individuals with no chronic diseases or infections</li>
+                        <li><span><img src={bldDrop}/></span>No recent history of major surgeries,tattoos,or piercings (within 6 months)</li>
                     </ul>
                     <img src={pic2}/>
             </div>

@@ -8,6 +8,7 @@ function App() {
       <Background/>
       <Navbar/>
       <Home/>
+      <Bottombg/>
     </>
   )
 }

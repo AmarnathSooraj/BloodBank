@@ -1,22 +1,14 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-
+import tt from '../assets/testtube.png'
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
     <nav className="nav">
       <div className='logo'>
-        <img src=""/>
-        <span>Haemax</span>
+        <span><img src={tt}/>Haemax</span>
       </div>
-      <div className={`menu-icon ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-      </div>
-      <ul className={isOpen ? 'nav-links open' : 'nav-links'}>
+      <ul>
         <li>Home</li>
         <li>Walkthrough</li>
         <li>About Us</li>
