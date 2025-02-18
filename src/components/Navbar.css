@@ -39,6 +39,9 @@
     margin:0 5px;
     cursor:pointer
 }
+.nav ul li a.active-link {
+    color: red ;
+  }
 .nav button{
     color:rgb(252, 70, 70);
     font-size: 1rem;

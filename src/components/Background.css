@@ -58,6 +58,9 @@
 
 
   @media (max-width: 600px) {
+    .background1 {
+      height:60vh;
+    }
     .background2 {
       height:50vh;
       padding: 5% 2%;
