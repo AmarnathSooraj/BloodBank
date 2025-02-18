@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Poppins;
 }
-body{
+html,body{
     overflow-x: hidden;
     width:100%;
 }
