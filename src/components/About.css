@@ -1,0 +1,29 @@
+
+.hero{
+    padding:7% 10%;
+    div .title{
+        color:rgb(231,61,61);
+        font-size: 1.9rem;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+    }
+    .ki{
+        padding-bottom:7%;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+        max-height: fit-content;
+        justify-content: space-around;
+        img{
+            object-fit:contain;
+        }
+        .para{
+            color:black;
+            align-self: center;
+            max-width: 500px;
+            font-size: 1.1rem;
+        }
+    }
+}

@@ -17,12 +17,14 @@
     background-repeat: no-repeat;
     height: 60vh;
     width:100%;
-    position:absolute;
+    position:relative;
+    bottom:0;
+    right:0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    z-index:-1;
     .content{
       text-align:center;
       border-bottom: 1px solid rgb(202, 196, 196);
@@ -53,3 +55,36 @@
       font-weight: 200;
     }
   }
+
+
+  @media (max-width: 600px) {
+    .background2 {
+      height:50vh;
+      padding: 5% 2%;
+      background-position: center;
+    }
+  
+    .background2 .content {
+      width: 90%;
+    }
+  
+    .background2 .content .heading {
+      font-size: 1.5rem;
+    }
+  
+    .background2 .content .line {
+      font-size: 0.9rem;
+    }
+  
+    .background2 .content button {
+      width: 80%;
+      font-size: 0.9rem;
+      padding: 8px 20px;
+    }
+  
+    .background2 .copy {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+  

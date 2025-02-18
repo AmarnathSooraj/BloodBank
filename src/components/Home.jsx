@@ -1,12 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Home.css'
 import pic1 from '../assets/pic1.png'
 import pic2 from '../assets/pic2.png'
 import pic3 from '../assets/pic3.png'
+import Background from '../components/Background'
 import bldDrop from '../assets/Blooddrop.png'
 
 function Home() {
   return (
+    <>
+    <Background/>
     <div className="container">
         <div className='section1'>
             <div className='des'>
@@ -15,8 +19,8 @@ function Home() {
                 <img src={pic1}/>
         </div>
         <div className='section2'>
-            <button>Donate Blood</button>
             <button>Receive Blood</button>
+            <button><Link to='/form'>Donate Blood</Link></button>
         </div>
         <div className="section3">
             <div className='heading'>Why Donate Blood?</div>
@@ -69,6 +73,7 @@ function Home() {
             </p>
         </div>
     </div>
+    </>
   )
 }
 

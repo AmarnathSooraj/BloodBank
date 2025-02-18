@@ -1,0 +1,101 @@
+.article {
+    padding: 0 2%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .article p {
+    font-size: 2rem;
+    color: rgb(231, 61, 61);
+  }
+  
+  .article form {
+    padding:4% 0;
+    max-width: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 700px;
+  }
+  
+  .article form input,
+  .article form select { /* Added select styling */
+    font-size: 1rem;
+    height: 40px;
+    padding: 20px 20px;
+    width: 300px;
+    border: 2px solid white;
+    border-bottom-color: red;
+    margin-bottom: 10px; /*Added margin for better spacing*/
+  }
+  
+  .article form button {
+    border-radius: 30px;
+    border: none;
+    color: #fefefe;
+    background-color: rgb(231, 61, 61);
+    font-weight: 500;
+    padding: 2% 6%;
+    cursor: pointer;
+    width: 150px; /*Added width to button*/
+  }
+  
+  .article form .topping {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .article form .topping label {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .article form .topping input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    height: auto;
+    padding: 0;
+  }
+
+  @media (max-width: 600px) {
+    .article {
+      padding: 0 5%;
+    }
+  
+    .article form {
+      flex-direction: column;
+      justify-content: center;
+      min-height: auto;
+    }
+  
+    .article form input,
+    .article form select, 
+    .article form button {
+      width: 100%; 
+      max-width: 100%; 
+    }
+  
+    .article form button {
+      padding: 10px;
+      width: 50%;
+      margin-top: 10px;
+    }
+  
+    .article form .topping {
+      align-items: center;
+    }
+  
+    .article form .topping label {
+      width: auto;
+      justify-content: center;
+    }
+  }
+  

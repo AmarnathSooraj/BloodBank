@@ -24,16 +24,20 @@
     flex-direction: row;
     justify-content:center;
     margin:15% 0 7% 0;
-}
-.section2 button{
+ button{
     padding:3% 5%;
     margin:8px;
     font-size: 1.4rem;
     border:none;
-    border-radius:12px;
     color:#fefefe;
+    border-radius:12px;
     background-color:rgb(231, 67, 67);
     cursor:pointer;
+    a{
+        text-decoration: none;
+        color:#fefefe;
+    }
+}
 }
 .section3, .section4{
     .heading{
@@ -75,7 +79,7 @@
     font-weight: 300;
 }
 .section5{
-    margin:3% 15%;
+    margin:4% 15%;
     background:url('../assets/Rectangle.png');
     background-position: center;
     background-repeat: no-repeat;
