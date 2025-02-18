@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="nav">
       <div className='logo'>
-        <span><img src={tt} alt="logo" />Haemax</span>
+        <span><Link to='/' className={isNotHome ? 'active-link' : ''}><img src={tt} alt="logo" />Haemax</Link></span>
       </div>
       <ul>
         <li>

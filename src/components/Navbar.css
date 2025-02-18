@@ -1,52 +1,74 @@
-
-.nav{
-    color:#fefefe;
-    display:flex;
+.nav {
+    color: #fefefe;
+    display: flex;
     flex-direction: row;
-    width:100%;
-    height:75px;
+    width: 100%;
+    height: 75px;
     justify-content: space-between;
     align-items: center;
-    padding:4% 4%;
+    padding: 4% 4%;
 }
-.nav .logo{
+
+.nav .logo {
     font-size: 1.5rem;
     font-weight: 200;
-    cursor:pointer;
-    span{
-        display: flex;
-        justify-content: center;
-        img{
-        width:20px;
-        height:40px;
-        }
-    }   
+    cursor: pointer;
 }
-.nav ul{
+
+.nav .logo span {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .logo span a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.nav .logo span a img {
+    width: 20px;
+    height: 40px;
+}
+
+.nav .logo span a.active-link {
+    color: rgb(252, 70, 70);
+}
+
+.nav ul {
     display: flex;
     flex-direction: row;
     min-width: 40%;
     justify-content: space-between;
-    li{
-        list-style: none;
-    }
 }
-.nav ul li a{
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
     text-decoration: none;
-    color:#fefefe;
+    color: #fefefe;
     font-size: 1.2rem;
-    font-family: 400;
-    margin:0 5px;
-    cursor:pointer
+    font-weight: 400; /* Corrected to font-weight */
+    margin: 0 5px;
+    cursor: pointer;
 }
+
 .nav ul li a.active-link {
-    color: red ;
-  }
-.nav button{
-    color:rgb(252, 70, 70);
+    color: rgb(252, 70, 70);
+}
+
+.nav button {
+    color: rgb(252, 70, 70);
     font-size: 1rem;
-    padding:6px 25px;
-    border-radius:14px;
-    border:none;
-    cursor:pointer;
+    padding: 6px 25px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    .nav ul{
+        display:none;
+    }
 }
