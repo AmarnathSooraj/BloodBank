@@ -63,6 +63,9 @@
     height:85vh;
   }
   .background2{
-    height:55vh;
+    height:40vh;
+    .content .heading{
+      font-size: 1.2rem;
+    }
   }
 }
