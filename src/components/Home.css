@@ -123,22 +123,6 @@
         color:rgb(231, 67, 67);
     }
 }
-.section7{
-    margin:5% 20%;
-    background:url('../assets/Rectangle2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding:4% 8%;
-    font-size: 1.3rem;
-    border-radius: 20px;
-    p{
-        margin:15px 0;
-    }
-    p span{
-        color:rgb(231, 67, 67);
-    }
-}
 
 @media (max-width : 768px){
     .container{
@@ -182,10 +166,6 @@
             ul{
                 font-size: 1.1rem;
             }
-        }
-        .section7{
-            margin:5% 6%;
-            font-size: 1.15rem;
         }
     }
 }

@@ -64,14 +64,6 @@ function Home() {
                 <li><span>Recovery:</span>Enjoy light refreshment and rest before resuming activities.</li>
             </ul>
         </div>
-        <div className='section7'>
-            <p>
-                <span>Find a Donation Center:</span>Locate the nearest blood bank using our intereactive app. Walk-in or schedule an appointment for hassle-free experience.
-            </p>
-            <p>
-                <span>Request Blood:</span>Need blood urgently? Submit a request through our online form and we will connect you with available donors and resources.
-            </p>
-        </div>
     </div>
     </>
   )
