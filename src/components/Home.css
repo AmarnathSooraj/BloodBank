@@ -145,6 +145,9 @@
                 padding:5% 2%;
             }
         }
+        .section3 .heading , .section4 .heading{
+            font-size: 1.6rem;
+        }
         .section3 .content , .section4 .content{
             flex-direction: column;
             margin:20px 0;
@@ -162,6 +165,9 @@
             padding:5% 8%;
         }
         .section6{
+            .heading{
+                font-size: 1.6rem;
+            }
             padding:0 10%;
             ul{
                 font-size: 1.1rem;
