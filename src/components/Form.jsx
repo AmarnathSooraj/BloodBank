@@ -24,7 +24,7 @@ function Form() {
           <option value="female">Female</option>
           <option value="other">Other</option>
         </select>
-        <input type="number" placeholder="Weight(kg)" />
+        <input type="number" placeholder="Weight(kg)" min="10"/>
         <input type="date" placeholder="Last donated date" />
         <input type="date" placeholder="DOB" />
         <input type="number" placeholder="Age" />

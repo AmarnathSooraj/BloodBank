@@ -59,16 +59,10 @@
 }
 
 .nav button {
-    color: rgb(252, 70, 70);
     font-size: 1rem;
     padding: 6px 25px;
     border-radius: 14px;
     border: none;
     cursor: pointer;
-}
-
-@media (max-width: 600px){
-    .nav ul{
-        display:none;
-    }
+    color:rgb(252, 70, 70);
 }

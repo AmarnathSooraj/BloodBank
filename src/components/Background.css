@@ -58,37 +58,11 @@
   }
 
 
-  @media (max-width: 600px) {
-    .background1 {
-      height:60vh;
-    }
-    .background2 {
-      height:50vh;
-      padding: 5% 2%;
-      background-position: center;
-    }
-  
-    .background2 .content {
-      width: 90%;
-    }
-  
-    .background2 .content .heading {
-      font-size: 1.5rem;
-    }
-  
-    .background2 .content .line {
-      font-size: 0.9rem;
-    }
-  
-    .background2 .content button {
-      width: 80%;
-      font-size: 0.9rem;
-      padding: 8px 20px;
-    }
-  
-    .background2 .copy {
-      font-size: 0.8rem;
-      text-align: center;
-    }
+@media(max-width : 768px){
+  .background1{
+    height:90vh;
   }
-  
+  .background2{
+    height:55vh;
+  }
+}

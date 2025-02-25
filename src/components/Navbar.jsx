@@ -6,7 +6,6 @@ import tt from '../assets/testtube.png';
 function Navbar() {
   const location = useLocation();
 
-  // If the current path is not the home page, all links should be red
   const isNotHome = location.pathname !== '/';
 
   return (
@@ -19,16 +18,13 @@ function Navbar() {
           <Link to='/' className={isNotHome ? 'active-link' : ''}>Home</Link>
         </li>
         <li>
-          <Link to='/' className={isNotHome ? 'active-link' : ''}>Walkthrough</Link>
-        </li>
-        <li>
           <Link to='/about' className={isNotHome ? 'active-link' : ''}>About Us</Link>
         </li>
         <li>
-          <Link to='/' className={isNotHome ? 'active-link' : ''}>Explore</Link>
+          <Link to='/' className={isNotHome ? 'active-link' : ''}>Register Donor</Link>
         </li>
       </ul>
-      <button className='signup-btn'>Sign Up</button>
+        <Link to='/login'><button className='signup-btn'>Login</button></Link>
     </nav>
   );
 }

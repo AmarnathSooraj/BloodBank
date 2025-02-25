@@ -9,15 +9,11 @@
     padding:5% 0;
     justify-content: space-between;
     align-items: center;
-    img{
-        animation:picanim 1.5s ease-in-out;
-    }
 }
 .des{
     color:#fefefe;
     font-size:3.2rem;
     max-width: 350px;
-    animation:desanimation 1s ease-in-out;
 }
 .section2{
     display: flex;
@@ -87,9 +83,9 @@
     padding:5% 12%;
     text-align: center;
     border-radius: 20px;
+    color:#fefefe;
     p{
         font-size: 1.8rem;
-        color:#fefefe;
     }
     button{
         border:none;
@@ -102,11 +98,12 @@
     }
 }
 .section6{
-    padding:0 8%;
+    padding:0 7%;
     display:flex;
     flex-direction: column;
     align-items: center;
     .heading{
+        margin-top:20px;
         font-size: 1.9rem;
         font-weight: 500;
         letter-spacing: 1px;
@@ -143,140 +140,52 @@
     }
 }
 
-@keyframes desanimation{
-    from{
-        transform:translateY(100px);
-        opacity:0;
-    }
-    to{
-        transform:translateY(0px);
-        opacity:1;
+@media (max-width : 768px){
+    .container{
+        padding:0% 10%;
+        .section1{
+            flex-direction: column;
+            .des{
+                font-size: 2.4rem;
+                text-align: center;
+                line-height:3rem;
+                padding:15% 0;
+            }
+            img{
+                width:100%;
+            }
+        }
+        .section2{
+            flex-direction: column;
+            button{
+                padding:5% 2%;
+            }
+        }
+        .section3 .content , .section4 .content{
+            flex-direction: column;
+            margin:20px 0;
+            .pic{
+                width:350px;
+            }
+        }
+        .section3 , .section4{
+            .list{
+                font-size: 1rem;
+            }
+        }
+        .section5{
+            margin:4% 6%;
+            padding:5% 8%;
+        }
+        .section6{
+            padding:0 10%;
+            ul{
+                font-size: 1.1rem;
+            }
+        }
+        .section7{
+            margin:5% 6%;
+            font-size: 1.15rem;
+        }
     }
 }
-@keyframes picanim{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-      padding: 0 4%;
-    }
-  
-    .section1 {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .section1 .des {
-      font-size: 2.2rem;
-      max-width: 100%;
-    }
-  
-    .section1 img {
-      width: 100%;
-      margin-top: 20px;
-    }
-  
-    .section2 {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .section2 button {
-      width: 80%;
-      font-size: 1.2rem;
-      padding: 10px;
-    }
-  
-    .section3 .content,
-    .section4 .content {
-      flex-direction: column;
-    }
-  
-    .section3 img,
-    .section4 img {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .section3 .list,
-    .section4 .list {
-      max-width: 100%;
-      font-size: 1rem;
-    }
-  
-    .section5 {
-      margin: 5% 0;
-      padding: 10% 5%;
-    }
-  
-    .section5 p {
-      font-size: 1.5rem;
-    }
-  
-    .section5 button {
-      width: 80%;
-      padding: 10px;
-      font-size: 1.1rem;
-    }
-  
-    .section6 {
-      padding: 0;
-    }
-  
-    .section6 .heading {
-      font-size: 1.6rem;
-    }
-  
-    .section6 ul {
-      padding-left: 20px;
-      font-size: 1.1rem;
-    }
-  
-    .section7 {
-      margin: 5% 0;
-      padding: 8% 5%;
-    }
-  
-    .section7 p {
-      font-size: 1.1rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .section1 .des {
-      font-size: 2rem;
-    }
-  
-    .section2 button {
-      font-size: 1rem;
-      padding: 8px;
-    }
-  
-    .section3 .list,
-    .section4 .list {
-      font-size: 0.9rem;
-    }
-  
-    .section5 p {
-      font-size: 1.2rem;
-    }
-  
-    .section5 button {
-      font-size: 1rem;
-    }
-  
-    .section6 .heading {
-      font-size: 1.4rem;
-    }
-  
-    .section7 p {
-      font-size: 1rem;
-    }
-  }
-  

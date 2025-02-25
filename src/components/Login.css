@@ -1,0 +1,78 @@
+.login-container{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:650px;
+    align-items: center;
+    justify-content: space-evenly;
+    .login-img{
+        background-size:cover;
+    }
+    .login-form{
+        font-size: 1.05rem;
+        justify-content:space-around;
+        padding:60px 40px;
+        background-color:#fefefe;
+        display: flex;
+        flex-direction: column;
+        max-width:400px;
+        height:550px;
+        border-radius: 8px;
+        box-shadow: 3px 5px 8px rgba(0,0,0,0.3);
+        p .create{
+            font-weight: 600;
+        }
+        .one{
+            display: flex;
+            flex-direction: column;
+        }
+        .one .login-google{
+            margin:2% 0;
+            display: flex;
+            align-items: center;
+            border:1px solid rgb(213, 213, 213);
+            border-radius: 6px;
+            cursor:pointer;
+            padding:8px 8px;
+            max-width: 100%;
+            color:rgb(68, 68, 68);
+            font-size: 1rem;
+            background-color: #fefefe;;
+            img{
+                width:30px;
+                height:30px;
+                margin:0 2%;
+            }
+        }
+        .two{
+            display:flex;
+            flex-direction: column;
+            input{
+                margin:2% 0;
+                border:1.5px solid rgb(169, 166, 166);
+                padding:10px 15px;
+                border-radius: 5px;
+                font-size: 0.95rem;
+            }
+            button{
+                padding:10px;
+                border-radius: 6px;
+                border:none;
+                font-weight: 500;
+                font-size: 1rem;
+                margin:10px 0;
+                color:#fefefe;
+                cursor:pointer;
+                background-color:rgb(237, 62, 62);
+            }
+            p{
+                font-weight: 300;
+                .in{
+                    color:rgb(270, 57, 57);
+                    text-decoration: none;
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+}

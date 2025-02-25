@@ -19,13 +19,13 @@ function Home() {
                 <img src={pic1}/>
         </div>
         <div className='section2'>
-            <button>Receive Blood</button>
-            <button><Link to='/form'>Donate Blood</Link></button>
+            <button>Find Blood</button>
+            <button><Link to='/form'>Register Donor</Link></button>
         </div>
         <div className="section3">
             <div className='heading'>Why Donate Blood?</div>
             <div className='content'>
-                    <img src={pic3}/>
+                    <img className='pic'src={pic3}/>
                     <ul className='list'>
                         <li><span><img src={bldDrop}/></span>Save lives<br/>
                             <span>Just one donation can help up to three people.</span>
@@ -48,7 +48,7 @@ function Home() {
                         <li><span><img src={bldDrop}/></span>Healthy individuals with no chronic diseases or infections</li>
                         <li><span><img src={bldDrop}/></span>No recent history of major surgeries,tattoos,or piercings (within 6 months)</li>
                     </ul>
-                    <img src={pic2}/>
+                    <img className='pic' src={pic2}/>
             </div>
         </div>
         <div className='section5'>
