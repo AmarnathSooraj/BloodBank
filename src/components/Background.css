@@ -1,77 +1,79 @@
-.background1{
-    background-image: url('../assets/bgHome.png'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 120vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  .background2{
-    background-image: url('../assets/bgHome2.png'); /* Replace with your image URL */
-    background-size: cover;
-    background-position:top;
-    background-repeat: no-repeat;
-    height: 45vh;
-    width:100%;
-    position:relative;
-    bottom:0;
-    right:0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: end;
-    align-items: center;
-    z-index:-1;
-    .content{
-      text-align:center;
-      border-bottom: 1px solid rgb(202, 196, 196);
-      width:70%;
-      .heading{
-        font-size: 1.5rem;
-        color:#fefefe;
-      }
-      .line{
-        margin:1% 0;
-        font-size: 0.8rem;
-        color:#c6c6c6;
-      }
-      button{
-        margin:1% 0;
-        color:rgb(252, 70, 70);
-        font-size: 1rem;
-        padding:6px 25px;
-        border-radius:14px;
-        border:none;
-        cursor:pointer;
-    }
-    }
-    .copy{
-      margin:0.4% 0;
-      font-size: 0.9rem;
-      color:#fefefe;
-      font-weight: 200;
-    }
+.background1 {
+  background-image: url('../assets/bgHome.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  width: 100%;
+  position: relative; /* Changed from absolute */
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.background2 {
+  background-image: url('../assets/bgHome2.png'); 
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 45vh;
+  width: 100%;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 0;
+}
+
+.background2 .content {
+  text-align: center;
+  border-bottom: 1px solid rgb(202, 196, 196);
+  width: 70%;
+}
+
+.background2 .content .heading {
+  font-size: 1.5rem;
+  color: #fefefe;
+}
+
+.background2 .content .line {
+  margin: 1% 0;
+  font-size: 0.8rem;
+  color: #c6c6c6;
+}
+
+.background2 .content button {
+  margin: 1% 0;
+  color: rgb(252, 70, 70);
+  font-size: 1rem;
+  padding: 6px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.background2 .copy {
+  margin: 0.4% 0;
+  font-size: 0.9rem;
+  color: #fefefe;
+  font-weight: 200;
+}
+
+@media (max-width: 768px) {
+  .background1 {
+      height: 90vh; /* Slightly increased for better layout */
   }
 
-
-@media(max-width : 768px){
-  .background1{
-    height:85vh;
+  .background2 {
+      height: 30vh; /* Adjusted height */
   }
-  .background2{
-    height:26vh;
-    .content {
-    .heading{
+
+  .background2 .content .heading {
       font-size: 1.2rem;
-    }
-    button{
-      padding:3px 15px;
-    }
   }
 
+  .background2 .content button {
+      padding: 3px 15px;
   }
 }
