@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-height: 120vh;
+  height: 120vh;
   width: 100%;
   position:absolute;
   top: 0;
@@ -16,14 +16,14 @@
   background-size:cover;
   background-position:top;
   background-repeat: no-repeat;
-  max-height: 35vh;
+  height: 45vh;
   width: 100%;
-  position: relative; 
+  position:relative; 
   display: flex;
   flex-direction: column;
   justify-content:end;
   align-items: center;
-  z-index: 1;
+  z-index: -1;
 }
 
 .background2 .content {
