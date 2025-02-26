@@ -8,7 +8,7 @@ function Bottombg() {
         <p className='line'>Reach out to us via phone, email, or visit our center. We're here to help!</p>
         <button>Contact us</button>
       </div>
-      <p className='copy'> 2025 Cactuus. All rights Reserved.</p>
+      <p className='copy'> 2025 Cactus. All rights Reserved.</p>
     </div>
   )
 }
