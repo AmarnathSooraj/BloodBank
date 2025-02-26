@@ -13,12 +13,12 @@
 
 .background2 {
   background-image: url('../assets/bgHome2.png'); 
-  background-size: cover;
-  background-position: center;
+  background-size:cover;
+  background-position:top;
   background-repeat: no-repeat;
   height: 35vh;
   width: 100%;
-  position: relative; 
+  position: absolute; 
   display: flex;
   flex-direction: column;
   justify-content:end;
