@@ -18,22 +18,22 @@
 .section2{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-evenly;
     margin:15% 0 7% 0;
- button{
-    padding:3% 5%;
-    margin:8px;
-    font-size: 1.4rem;
-    border:none;
-    color:#fefefe;
-    border-radius:12px;
-    background-color:rgb(231, 67, 67);
-    cursor:pointer;
     a{
         text-decoration: none;
         color:#fefefe;
+        button{
+            width:250px;
+            height:80px;
+            font-size: 1.4rem;
+            border:none;
+            color:#fefefe;
+            border-radius:12px;
+            background-color:rgb(231, 67, 67);
+            cursor:pointer;
+        }
     }
-}
 }
 .section3, .section4{
     .heading{
@@ -141,8 +141,10 @@
         }
         .section2{
             flex-direction: column;
-            button{
-                padding:5% 2%;
+            align-items: center;
+            a button{
+                padding:3% 5%;
+                margin:10px 0;
             }
         }
         .section3 .heading , .section4 .heading{

@@ -7,6 +7,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 4% 4%;
+    .icon-con{
+        display:none;
+    }
 }
 
 .nav .logo {
@@ -66,8 +69,19 @@
 }
 @media (max-width:768px){
     .nav{
+        .icon-con{
+            cursor:pointer;
+            display:block;
+            .icon{
+               width:30px;
+               height:30px;
+            }
+        }
         ul{
             display: none;
+        }
+        button{
+            padding: px 15px;
         }
     }
 }

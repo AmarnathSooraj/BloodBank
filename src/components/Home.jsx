@@ -19,8 +19,8 @@ function Home() {
                 <img src={pic1}/>
         </div>
         <div className='section2'>
-            <button>Find Blood</button>
-            <button><Link to='/form'>Register Donor</Link></button>
+        <Link to='/form'><button>Find Blood</button></Link>
+            <Link to='/form'><button>Register Donor</button></Link>
         </div>
         <div className="section3">
             <div className='heading'>Why Donate Blood?</div>
