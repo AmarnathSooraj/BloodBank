@@ -14,7 +14,7 @@
 .background2 {
   background-image: url('../assets/bgHome2.png'); 
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   height: 35vh;
   width: 100%;
@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content:end;
   align-items: center;
-  z-index: 0;
+  z-index: -1;
 }
 
 .background2 .content {
