@@ -52,7 +52,7 @@
         align-items: center;
     }
     .list{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         max-width:600px;
         line-height:40px;
         letter-spacing: 1px;
@@ -157,7 +157,7 @@
         }
         .section3 , .section4{
             .list{
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
         .section5{
