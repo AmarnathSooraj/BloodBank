@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height:100%;
+  padding:30% 0;
   width: 100%;
   position:absolute;
   top: 0;
@@ -12,7 +12,7 @@
 }
 
 .background2 {
-  max-height: 20vh;
+  padding: 2% 0;
   width: 100%;
   background-color: rgb(188, 42, 44);
   display: flex;
@@ -59,13 +59,11 @@
 
 @media (max-width:768px) {
   .background1 {
-      height: 90vh; /* Slightly increased for better layout */
+      padding: 60% 0 /* Slightly increased for better layout */
   }
-
-  .background2 {
-      max-height:15vh; /* Adjusted height */
+  .background2{
+    padding:2% 0;
   }
-
   .background2 .content .heading {
       font-size: 1.2rem;
   }
