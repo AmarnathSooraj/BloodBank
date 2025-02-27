@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 120vh;
+  height:100%;
   width: 100%;
   position:absolute;
   top: 0;
@@ -16,9 +16,9 @@
   background-size:cover;
   background-position:top;
   background-repeat: no-repeat;
-  height: 35vh;
+  height: 40vh;
   width: 100%;
-  position:relative; 
+  position:absolute;
   display: flex;
   flex-direction: column;
   justify-content:end;
@@ -61,13 +61,13 @@
   font-weight: 200;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .background1 {
       height: 90vh; /* Slightly increased for better layout */
   }
 
   .background2 {
-      height: 30vh; /* Adjusted height */
+      height:25vh; /* Adjusted height */
   }
 
   .background2 .content .heading {
