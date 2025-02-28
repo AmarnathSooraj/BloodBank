@@ -1,68 +1,85 @@
 .article {
-    padding: 0 2%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .article p {
-    font-size: 2rem;
-    color: rgb(231, 61, 61);
-  }
-  
-  .article form {
-    padding:4% 0;
-    max-width: 650px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 700px;
-  }
-  
-  .article form input,
-  .article form select { /* Added select styling */
-    font-size: 1rem;
-    height: 40px;
-    padding: 20px 20px;
-    width: 300px;
-    border: 2px solid white;
-    border-bottom-color: red;
-    margin-bottom: 10px; /*Added margin for better spacing*/
-  }
-  .article form button {
-    border-radius: 30px;
-    border: none;
-    color: #fefefe;
-    background-color: rgb(231, 61, 61);
-    font-weight: 500;
-    padding: 2% 6%;
-    cursor: pointer;
-    width: 150px; /*Added width to button*/
-  }
-  
-  .article form .topping {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding:0 5%;
-  }
-  
-  .article form .topping label {
-    width: 150px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-  }
-  
-  .article form .topping input[type="checkbox"] {
-    width: auto;
-    margin-right: 5px;
-    height: auto;
-    padding: 0;
-  }
+  padding: 0 2%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  
+.article p {
+  font-size: 2rem;
+  color: rgb(231, 61, 61);
+}
+
+.article form {
+  padding: 4% 0;
+  min-width: 550px;
+  display: flex;
+  flex-direction: column; /* Changed to column for labels above inputs */
+  align-items: stretch; /* Stretch inputs to full width */
+  min-height: 700px;
+}
+
+.article form label { /* Styles for labels */
+  font-size: 1rem;
+  margin-bottom: 5px; /* Spacing between label and input */
+  display: block; /* Ensure labels are block-level */
+}
+
+.article form input,
+.article form select {
+  font-size: 1.1rem;
+  height: 55px;
+  padding: 10px 15px; /* Adjusted padding */
+  width: 100%; /* Inputs take full width */
+  border: 2px solid white;
+  border-bottom-color: red;
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.article form button {
+  border-radius: 30px;
+  border: none;
+  color: #fefefe;
+  background-color: rgb(231, 61, 61);
+  font-weight: 500;
+  padding: 2% 6%;
+  cursor: pointer;
+  width: 150px;
+  align-self: center; /* Center the button */
+  margin-top: 20px; /* Add space between inputs and button */
+}
+
+.article form .topping {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 5%; /* Adjusted padding */
+  margin-bottom: 20px; /* Space between toppings and button */
+}
+
+.article form .topping label {
+  width: auto; /* Allow label to fit content */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.article form .topping input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+  height: auto;
+  padding: 0;
+}
+
+@media (max-width:768px){
+  .article{
+    padding: 4% 0%;
+    form{
+      min-width: 450px;
+      padding: 4% 2%;
+    }
+  }
+}

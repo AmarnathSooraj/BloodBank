@@ -20,7 +20,7 @@ function Login() {
             <label>Email address</label>
             <input type="email" />
             <label>Password</label>
-            <input type="password" />
+            <input type="password"/>
             <button>Login</button>
             <p>Have an account? <Link className='in'>Sign in</Link></p>
           </div>
