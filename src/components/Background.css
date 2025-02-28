@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding:30% 0;
+  padding:31% 0;
   width: 100%;
   position:absolute;
   top: 0;
@@ -12,15 +12,18 @@
 }
 
 .background2 {
-  padding: 2% 0;
+  padding-top: 7%;
   width: 100%;
-  background-color: rgb(188, 42, 44);
+  background-image: url('../assets/bgHome2.png'); 
+  background-size: cover;
+  background-position:top;
+  background-repeat: no-repeat;
+  position:relative;
   display: flex;
   flex-direction: column;
   justify-content:end;
-  align-items: center;
+  align-items:center;
   z-index: -1;
-
 }
 
 .background2 .content {
@@ -62,7 +65,7 @@
       padding: 60% 0 /* Slightly increased for better layout */
   }
   .background2{
-    padding:2% 0;
+    padding-top: 15%;
   }
   .background2 .content .heading {
       font-size: 1.2rem;

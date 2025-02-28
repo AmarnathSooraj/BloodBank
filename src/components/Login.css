@@ -76,3 +76,14 @@
         }
     }
 }
+@media (max-width:768px){
+    .login-container{
+        .login-img{
+            display: none;
+        }
+        .login-form{
+            padding:50px 40px;
+            height:550px;
+        }
+    }
+}
