@@ -1,45 +1,64 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import tt from '../assets/testtube.png';
 import menu from '../assets/menu.png';
-import close from '../assets/close.png'
-import { useState } from 'react'
+import close from '../assets/close.png';
 
 function Navbar() {
   const location = useLocation();
-
+  const navigate = useNavigate();
   const isNotHome = location.pathname !== '/';
-
-  const [navMenu,setNavMenu] = useState(false);
+  const [navMenu, setNavMenu] = useState(false);
 
   const toggleMenu = () => {
     setNavMenu((prev) => !prev);
   };
 
+  const handleLinkClick = (path) => {
+    setNavMenu(false); // Close the menu
+    navigate(path); // Navigate to the specified path
+  };
+
+  useEffect(() => {
+    setNavMenu(false); // Close the menu whenever the location changes
+  }, [location]);
+
   return (
-    <nav className="nav">
+    <nav className={`nav ${navMenu ? 'nav-mobile-open' : ''}`}>
       <div className='icon-con' onClick={toggleMenu}>
-        <img className='icon'src={navMenu ? close : menu} />
+        <img className='icon' src={navMenu ? close : menu} alt='menu' />
       </div>
       <div className='logo'>
-        <span><Link to='/' className={isNotHome ? 'active-link' : ''}><img src={tt} alt="logo" />Haemax</Link></span>
+        <span>
+          <Link to='/' className={isNotHome ? 'active-link' : ''}>
+            <img src={tt} alt='logo' />
+            Haemax
+          </Link>
+        </span>
       </div>
-      <ul>
+      <ul className={`nav-links ${navMenu ? 'nav-links-mobile-open' : ''}`}>
         <li>
-          <Link to='/' className={isNotHome ? 'active-link' : ''}>Home</Link>
+          <span onClick={() => handleLinkClick('/')} style={{ cursor: 'pointer' }}>
+            Home
+          </span>
         </li>
         <li>
-          <Link to='/about' className={isNotHome ? 'active-link' : ''}>About Us</Link>
+          <span onClick={() => handleLinkClick('/about')} style={{ cursor: 'pointer' }}>
+            About Us
+          </span>
         </li>
         <li>
-          <Link to='/' className={isNotHome ? 'active-link' : ''}>Register Donor</Link>
+          <span onClick={() => handleLinkClick('/')} style={{ cursor: 'pointer' }}>
+            Register Donor
+          </span>
         </li>
       </ul>
-        <Link to='/login'><button className='signup-btn'>Login</button></Link>
+      <Link to='/login'>
+        <button className='signup-btn'>Login</button>
+      </Link>
     </nav>
   );
 }
 
 export default Navbar;
-
