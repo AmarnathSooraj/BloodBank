@@ -60,7 +60,7 @@
   font-weight: 200;
 }
 
-@media (max-width:768px) {
+@media (max-width:900px) {
   .background1 {
       padding: 60% 0 /* Slightly increased for better layout */
   }
