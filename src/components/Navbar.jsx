@@ -16,12 +16,12 @@ function Navbar() {
   };
 
   const handleLinkClick = (path) => {
-    setNavMenu(false); // Close the menu
-    navigate(path); // Navigate to the specified path
+    setNavMenu(false);
+    navigate(path);
   };
 
   useEffect(() => {
-    setNavMenu(false); // Close the menu whenever the location changes
+    setNavMenu(false);
   }, [location]);
 
   return (
@@ -39,17 +39,35 @@ function Navbar() {
       </div>
       <ul className={`nav-links ${navMenu ? 'nav-links-mobile-open' : ''}`}>
         <li>
-          <span onClick={() => handleLinkClick('/')} style={{ cursor: 'pointer' }}>
+          <span
+            onClick={() => handleLinkClick('/')}
+            style={{
+              cursor: 'pointer',
+              color: location.pathname === '/' ? '#fefefe' : 'rgba(252, 70, 70, 0.8)',
+            }}
+          >
             Home
           </span>
         </li>
         <li>
-          <span onClick={() => handleLinkClick('/about')} style={{ cursor: 'pointer' }}>
+          <span
+            onClick={() => handleLinkClick('/about')}
+            style={{
+              cursor: 'pointer',
+              color: location.pathname === '/about' ? 'rgba(252, 70, 70, 0.8)' : '#fefefe',
+            }}
+          >
             About Us
           </span>
         </li>
         <li>
-          <span onClick={() => handleLinkClick('/')} style={{ cursor: 'pointer' }}>
+          <span
+            onClick={() => handleLinkClick('/')}
+            style={{
+              cursor: 'pointer',
+              color: location.pathname === '/about' ? 'rgba(252, 70, 70, 0.8)' : '#fefefe',
+            }}
+          >
             Register Donor
           </span>
         </li>

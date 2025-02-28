@@ -6,11 +6,11 @@
     height: 75px;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 4%; /* Adjusted padding */
+    padding: 2% 4%;
   }
   
   .nav .icon-con {
-    display: none; /* Hidden by default */
+    display: none;
   }
   
   .nav .logo {
@@ -73,12 +73,12 @@
   /* Mobile View */
   @media (max-width: 768px) {
     .nav {
-      padding: 2% 4%; /* Keep consistent padding */
+      padding: 2% 4%;
     }
   
     .nav .icon-con {
       cursor: pointer;
-      display: block; /* Show icon on mobile */
+      display: block;
     }
   
     .nav .icon-con .icon {
@@ -87,22 +87,21 @@
     }
   
     .nav ul {
-      display: none; /* Hide nav links on mobile */
+      display: none;
     }
   
     .nav button {
-      padding: 6px 15px; /* Adjusted button padding */
+      padding: 6px 15px;
     }
   
-    /* Mobile Menu Open State (Add this based on your React state) */
     .nav.nav-mobile-open ul {
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 75px; /* Height of the nav */
+      top: 75px;
       left: 0;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.9); /* Add background */
+      background-color: rgba(0, 0, 0, 0.9);
       padding: 10px 0;
       align-items: center;
       z-index: 10;
@@ -111,4 +110,45 @@
     .nav.nav-mobile-open ul li {
       margin: 10px 0;
     }
+  }
+  
+  /* Color nav links red when not on the home page (desktop) */
+  .nav ul li span {
+    color: #fefefe; /* Default color */
+  }
+  
+  .nav ul li span.nav-link-active {
+    color: rgba(252, 70, 70, 0.8);
+  }
+  
+  /* Color mobile menu links red when not on the home page */
+  .nav.nav-mobile-open ul li span {
+    color: #fefefe; /* Default color */
+  }
+  
+  .nav.nav-mobile-open ul li span.nav-link-active {
+    color: rgba(252, 70, 70, 0.8);
+  }
+  
+  /* Add hover effect for desktop links */
+  .nav ul li span {
+    transition: color 0.3s ease;
+  }
+  
+  .nav ul li span:hover {
+    color: rgb(252, 70, 70);
+  }
+  
+  /* Add hover effect for mobile links */
+  .nav.nav-mobile-open ul li span {
+    transition: color 0.3s ease;
+  }
+  
+  .nav.nav-mobile-open ul li span:hover {
+    color: rgb(252, 70, 70);
+  }
+  
+  /* Style active link in mobile menu */
+  .nav.nav-mobile-open ul li span.nav-link-active {
+    color: rgb(252, 70, 70);
   }
