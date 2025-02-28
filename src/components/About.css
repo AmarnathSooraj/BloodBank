@@ -1,54 +1,57 @@
 .hero {
-    padding: 4% 10%;
-}
-
-.title {
-    margin-bottom:2%;
+    padding: 4% 12%;
+  }
+  
+  .title {
+    margin-bottom: 2%;
     color: rgb(231, 61, 61);
     font-size: 1.9rem;
     display: flex;
     justify-content: center;
-}
-
-.ki {
+    text-align: center; /* Center text on smaller screens */
+  }
+  
+  .ki {
     padding-bottom: 7%;
-}
-
-.section {
+  }
+  
+  .section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 20px;
-}
-
-.section img {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .section img {
     max-width: 400px;
     width: 100%;
     object-fit: contain;
     border-radius: 10px;
-}
-
-.para {
+  }
+  
+  .para {
     color: black;
     max-width: 500px;
     font-size: 1.1rem;
     line-height: 1.6;
-}
-
-/* Button Section */
-.section5 {
+    text-align: justify; /* Justify text for better readability */
+  }
+  
+  /* Button Section */
+  .section5 {
     text-align: center;
     margin-top: 20px;
-}
-
-.section5 p {
+  }
+  
+  .section5 p {
     font-size: 1.4rem;
-    color:#fefefe;
+    color: #fefefe;
     margin-bottom: 10px;
-}
-
-.section5 button {
+  }
+  
+  .section5 button {
     border: none;
     cursor: pointer;
     padding: 10px 30px;
@@ -57,9 +60,57 @@
     color: #fff;
     font-size: 1.1rem;
     transition: background 0.3s;
-}
-
-.section5 button:hover {
+  }
+  
+  .section5 button:hover {
     background-color: rgb(200, 50, 50);
-}
-
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items */
+    }
+  
+    .section img {
+      max-width: 100%; /* Image takes full width */
+    }
+  
+    .para {
+      max-width: 100%; /* Paragraph takes full width */
+      padding: 0 10px; /* Add padding for smaller screens */
+    }
+  
+    .title {
+      font-size: 1.7rem; /* Adjust title font size */
+    }
+  
+    .section5 p {
+      font-size: 1.2rem; /* Adjust paragraph font size */
+    }
+  
+    .section5 button {
+      padding: 8px 20px; /* Adjust button padding */
+      font-size: 1rem; /* Adjust button font size */
+    }
+  
+    .hero {
+      padding: 4% 5%; /* Adjust padding */
+    }
+  }
+  
+  /* Further Adjustments for Very Small Screens */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .section5 p {
+      font-size: 1rem;
+    }
+  
+    .section5 button {
+      font-size: 0.9rem;
+    }
+  }
