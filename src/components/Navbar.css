@@ -48,11 +48,11 @@
     list-style: none;
   }
   
-  .nav ul li a {
+  .nav ul li span {
     text-decoration: none;
     color: #fefefe;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 5px;
     cursor: pointer;
   }
