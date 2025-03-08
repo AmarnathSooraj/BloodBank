@@ -11,9 +11,14 @@
   z-index: -1;
 }
 
-.background2.-logsign{
-  display: none;
+.background2.logsign{
+  /* Ensure the background is completely hidden */
+  display: none !important; /* ✅ Ensures the element is hidden */
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
 }
+
 .background2 {
   padding-top: 7%;
   width: 100%;
