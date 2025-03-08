@@ -22,7 +22,7 @@ function Login() {
             <label>Password</label>
             <input type="password"/>
             <button>Login</button>
-            <p>Have an account? <Link className='in'>Sign in</Link></p>
+            <p>Have n't an account? <Link className='in' to='/signup'>Sign up</Link></p>
           </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import About from './components/About';
 import Bottombg from './components/Bottombg';
 import Form from './components/Form'
 import Login from './components/Login'
+import Signup from './components/signup'
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path='/form' element={<Form />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup/>}/>
         </Routes>
       </BrowserRouter>
       <Bottombg />

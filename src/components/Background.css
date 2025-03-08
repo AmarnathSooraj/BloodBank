@@ -11,6 +11,9 @@
   z-index: -1;
 }
 
+.background2.-logsign{
+  display: none;
+}
 .background2 {
   padding-top: 7%;
   width: 100%;

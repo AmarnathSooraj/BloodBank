@@ -78,14 +78,16 @@
 }
 @media (max-width:768px){
     .login-container{
+        flex-direction: column;
         padding:0 5%;
+        margin:10% 0;
         .login-img{
-            display: none;
+            width:250px;
         }
         .login-form{
-            padding:50px 40px;
+            padding:40px 30px;
             height:550px;
-            max-width: 350px;
+            max-width: 390px;
         }
     }
 }

@@ -54,7 +54,7 @@ function Navbar() {
             onClick={() => handleLinkClick('/about')}
             style={{
               cursor: 'pointer',
-              color: location.pathname === '/about' || location.pathname === '/login' || location.pathname === '/form' ? 'rgba(252, 70, 70, 0.8)' : '#fefefe',
+              color: location.pathname === '/about' || location.pathname === '/login' || location.pathname === '/form' || location.pathname === '/signup' ? 'rgba(252, 70, 70, 0.8)' : '#fefefe',
             }}
           >
             About Us
@@ -65,7 +65,7 @@ function Navbar() {
             onClick={() => handleLinkClick('/')}
             style={{
               cursor: 'pointer',
-              color: location.pathname === '/about' || location.pathname === '/login' || location.pathname === '/form'? 'rgba(252, 70, 70, 0.8)' : '#fefefe',
+              color: location.pathname === '/about' || location.pathname === '/login' || location.pathname === '/form' || location.pathname === '/signup' ? 'rgba(252, 70, 70, 0.8)' : '#fefefe',
             }}
           >
             Register Donor
