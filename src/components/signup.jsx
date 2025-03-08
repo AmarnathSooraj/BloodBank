@@ -18,8 +18,10 @@ function signup() {
           <input type='text'/>
           <label htmlFor="dob">DOB</label>
           <input type='date'/>
+          <label htmlFor="tel">Phone number</label>
+          <input type="tel"/>
           <label htmlFor="email">E-mail</label>
-          <input type='email'/>
+          <input type="email"/>
           <label htmlFor="password">Password</label>
           <input type='password'/>
           <label htmlFor="re-password">Re-enter Password</label>
